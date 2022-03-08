@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Events</title>
+</head>
+
+<body>
+    <h1>My events for you</h1>
+    <section>
+        <h1>This is important talk for you</h1>
+        <input type="text" id="comform-text" placeholder='Type Delete'>
+        <br>
+        <br>
+        <button id="delete-button" disabled>Delete</button>
+    </section>
+    <script>
+        const conformText = document.getElementById('comform-text');
+        const deleteButton = document.getElementById('delet-button');
+        // focus
+        conformText.addEventListener('focus', function (e) {
+            e.target.style.outline = 'none'
+            e.target.style.border = '2px solid pink'
+            e.target.style.color = 'red'
+
+        })
+        // input events
+        conformText.addEventListener('keyup', function (e) {
+            console.log(e.target.value)
+            if (e.target.value == 'delete') {
+                e.target.style.color = 'green'
+                const deleteButton = document.getElementById('delete-button')
+                deleteButton.style.backgroundColor = 'red'
+                deleteButton.style.outline = 'none'
+                deleteButton.style.fontWeight = 'bold'
+                deleteButton.style.border = 'none'
+                deleteButton.removeAttribute('disabled');
+            }
+            else {
+                e.target.style.color = 'gray'
+                const deleteButton = document.getElementById('delete-button')
+                deleteButton.style.backgroundColor = 'none'
+                deleteButton.style.outline = 'none'
+                deleteButton.style.border = '2px solid gray'
+                deleteButton.setAttribute('disabled', true);
+            }
+        })
+        // button event
+        const deletButton = document.getElementById('delete-button')
+        deletButton.addEventListener('click', function () {
+            console.log('pressed')
+        })
+    </script>
+</body>
+
+</html>

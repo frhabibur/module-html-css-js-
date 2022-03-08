@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Element</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Header section</h1>
+        <ul class="blog-list">
+            <li>item - 1</li>
+            <li>item - 2</li>
+            <li>item - 3</li>
+            <li>item - 4</li>
+            <li>item - 5</li>
+        </ul>
+    </header>
+    <main>
+        <article class='blog'>
+            <h1>Article title - 1</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis adipisci iusto dicta error neque rem
+                architecto animi quaerat eligendi autem?</p>
+            <a href="google.com" id="link">google.com</a>
+        </article>
+        <article class='blog'>
+            <h1 id="second-title">Article title - 2</h1>
+            <p>Facere porro inventore similique, voluptate eos fuga iusto molestias ipsa saepe. Vero nostrum quisquam
+                aspernatur delectus facilis earum recusandae voluptates.</p>
+            <a href="google.com" id="link">google.com</a>
+        </article>
+        <article class='blog'>
+            <h1>Article title - 3</h1>
+            <p>Blanditiis, ab consectetur! Quia maiores delectus distinctio assumenda reiciendis quasi explicabo iure
+                quod omnis quae placeat sint fuga, aliquid consectetur?</p>
+            <a href="google.com" class="link">google.com</a>
+        </article>
+        <article class='blog'>
+            <h1>Article title - 4</h1>
+            <p>Dolore fugit dolores ad repellat possimus? Animi dolores quam placeat explicabo tempora impedit
+                recusandae enim eius nobis, provident laboriosam numquam.</p>
+            <a href="google.com" class="link">google.com</a>
+        </article>
+        <article class='blog'>
+            <h1>Article title - 5</h1>
+            <p>Facere quasi ab quo minus harum sunt quisquam expedita hic, voluptas ut tenetur. Eaque quis ex possimus
+                facilis, consectetur in!</p>
+            <a href="google.com" class="link">google.com</a>
+        </article>
+    </main>
+    <script>
+        var object = { name: 'habibur Rahman', age: 20, professing: 'freelancer' }
+        let heading = document.getElementsByTagName('h1');
+        for (const h1 of heading) {
+            console.log(h1.innerText)
+        }
+
+        let pragpah = document.getElementsByTagName('p');
+        for (const p of pragpah) {
+            console.log(p.innerText)
+        }
+
+        const secondTitle = document.getElementById('second-title');
+        console.log(secondTitle)
+
+        const blogElement = document.getElementsByClassName('blog');
+        for (const blog of blogElement) {
+            blog.style.border = '2px solid red';
+            blog.style.margin = '5px';
+            blog.style.padding = '10px';
+            blog.style.borderRadius = "10px"
+        }
+
+        // const link = document.getElementsByClassName('link');
+        // link.style.color = 'red'
+
+        // create and add child
+
+        const li = document.createElement('li');
+        li.innerText = 'hello'
+        const ula = document.getElementById('list-item');
+        ula.appendChild(li)
+
+
+    </script>
+</body>
+
+</html>

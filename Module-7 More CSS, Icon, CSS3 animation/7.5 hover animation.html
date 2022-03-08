@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover animation</title>
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+            background: violet;
+            transition: width 1s ease-in, height 1s ease-in-out, transform 1s ease;
+            transition: all 1s;
+        }
+
+        .box:hover>h2 {
+            transform: rotate(180deg)       
+        }
+
+        .box:hover {
+            width: 500px;
+            height: 300px;
+            transform: rotate(180deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <h2> animation</h2>
+    </div>
+</body>
+
+</html>

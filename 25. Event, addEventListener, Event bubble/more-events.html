@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More Events</title>
+</head>
+
+<body>
+    <h1>More Events</h1>
+    <section>
+        <h3 id="delete-text">I wante to delete you</h3>
+        <input type="text" name="" id="delete-conform" placeholder="Please type delete">
+        <button id="delete-button" disabled>delete</button>
+    </section>
+    <script>
+        document.getElementById('delete-button').addEventListener('click', function () {
+            document.getElementById('delete-text').style.display = 'none'
+        })
+        document.getElementById('delete-conform').addEventListener('focus', function () {
+            document.body.style.backgroundColor = 'red'
+        })
+        document.getElementById('delete-conform').addEventListener('blur', function () {
+            document.body.style.backgroundColor = 'white'
+        })
+        // keydown
+        // document.getElementById('delete-conform').
+        // addEventListener('keydown', function (Event) {
+        //     console.log(event.target.value)
+        // })
+        // keypress
+        // document.getElementById('delete-conform').
+        //     addEventListener('keypress', function (Event) {
+        //         console.log(event.target.value)
+        //     })
+        // keyUP
+        document.getElementById('delete-conform').
+            addEventListener('keyup', function (Event) {
+                if (event.target.value == 'delete') {
+                    document.getElementById('delete-button').removeAttribute('disabled')
+                }
+                else {
+                    document.getElementById('delete-button').setAttribute('disabled', true)
+                }
+            })
+        // change
+        document.getElementById('delete-conform').
+            addEventListener('change', function (Event) {
+                console.log(event.target.value)
+            })
+    </script>
+</body>
+
+</html>

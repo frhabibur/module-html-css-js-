@@ -1,0 +1,14 @@
+#contries-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 20px;
+    width:80%;
+    margin: 0 auto;
+}
+
+.countries{
+    border:2px solid tomato;
+    padding:10px;
+    border-radius: 10px;
+    background-color: antiquewhite;
+}

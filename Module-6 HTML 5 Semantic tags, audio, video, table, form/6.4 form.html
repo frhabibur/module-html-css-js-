@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input</title>
+    <link rel="stylesheet" href="css/nav.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="6.5 nav.html">Nav</a></li>
+                <li><a href="6.2 semantics-html5.html">Semantics</a></li>
+                <li><a href="6.3 table.html">Table</a></li>
+                <li><a href="6.4 form.html">Form</a></li>
+                <li><a href="6.1 audio-vide.html">Audio</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1 style="text-align: center;">Input Fields</h1>
+        <form action="">
+            <p>Your Full Name: <input type="text" name="name" id="uName" placeholder="Enter Your Name"></p>
+            <p>Your Full Email: <input type="email" name="email" id="uEmail" placeholder="Enter Your Email"></p>
+            <fieldset>
+                <legend>Select Your Division</legend>
+                <label for="scince">
+                    <p><input type="radio" name="section" id="scince">Scince</p>
+                </label>
+                <label for="arts">
+                    <p><input type="radio" name="section" id="arts">Arts</p>
+                </label>
+                <label for="com-arts">
+                    <p><input type="radio" name="section" id="com-arts">Com-arts</p>
+                </label>
+            </fieldset>
+
+            <fieldset>
+
+                <legend>Select Your Subject</legend>
+                <label for="bangla">
+                    <p><input type="checkbox" name="Subject" id="bangla">Bangla</p>
+                </label>
+                <label for="english">
+                    <p><input type="checkbox" name="Subject" id="english">English</p>
+                </label><label for="math">
+                    <p><input type="checkbox" name="Subject" id="math">Math</p>
+                </label><label for="islam">
+                    <p><input type="checkbox" name="Subject" id="islam">Islam</p>
+                </label><label for="ict">
+                    <p><input type="checkbox" name="Subject" id="ict">ICT</p>
+                </label>
+                <textarea name="coment" id="" cols="30" rows="10"></textarea>
+
+            </fieldset>
+            <br>
+            <button type="submit">submit</button>
+            <!-- <input type="submit" value="submit"> -->
+            <button type="reset">Reset</button>
+        </form>
+    </main>
+
+
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        .grid-container{
+            display:grid;
+            grid-template-columns:repeat(2, 1fr) 2fr;
+            margin:100px 50px;
+            /* grid-row-gap: 20px;
+            grid-column-gap: 10px; */
+            grid-gap:5px 20px;
+            
+        }
+        .grid-sell{
+            border:1px solid lightgreen;
+            padding:10px;
+            font-size:1.2em;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section class="grid-container">
+           <div class="grid-sell">Cell Number-1</div>
+           <div class="grid-sell">Cell Number-2</div>
+           <div class="grid-sell">Cell Number-3</div>
+           <div class="grid-sell">Cell Number-4</div>
+           <div class="grid-sell">Cell Number-5</div>
+           <div class="grid-sell">Cell Number-6</div>
+           <div class="grid-sell">Cell Number-7</div>
+           <div class="grid-sell">Cell Number-8</div>
+           <div class="grid-sell">Cell Number-9</div>
+           <div class="grid-sell">Cell Number-10</div>
+           <div class="grid-sell">Cell Number-11</div>
+           <div class="grid-sell">Cell Number-12</div>
+        </section>
+    </main>
+</body>
+</html>

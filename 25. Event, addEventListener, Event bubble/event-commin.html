@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>event common</title>
+</head>
+
+<body>
+    <p id='eventText'></p>
+    <input type="text" name="" id="inputBox">
+    <button id="update">update</button>
+    <button id="usingFunction" onclick="addText()">Using function</button>
+    <button id="direct">direct</button>
+
+
+    <script>
+        function addText() {
+            document.getElementById('eventText').innerText = 'i am from event'
+        }
+
+        document.getElementById('direct').addEventListener('click', function () {
+            document.getElementById('eventText').innerText = 'iam from directley'
+        })
+        document.getElementById('update').addEventListener('click', function () {
+            const inputValue = document.getElementById('inputBox').value;
+            const p = document.getElementById('eventText').innerText = inputValue
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spacificity</title>
+    <style>
+        .unique {
+            color: rgb(234, 6, 255) !important;
+        }
+
+        #power {
+            color: orange
+        }
+
+        .first {
+            color: greenyellow;
+        }
+
+        h1 {
+            color: red;
+        }
+
+        h1 {
+            color: lightcoral;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <h1 id="power" class="first">heading-1</h1>
+        <h1 id="power" class="first">heading-1</h1>
+        <h1 id="power" class="first" style="color:black">heading-1</h1>
+        <h1 id="power" class="first unique">heading-1 I am !important</h1>
+    </main>
+</body>
+
+</html>

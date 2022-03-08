@@ -1,0 +1,14 @@
+applePrice = 20;
+orangePrice = 50;
+// console.log(applePrice);
+// console.log(orangePrice);
+// console.log("Total = " + (orangePrice + applePrice));
+// var totalPrice = applePrice + orangePrice;
+// console.log(totalPrice);
+// var priceDifference = orangePrice - applePrice;
+// console.log(priceDifference);
+// var apple5 = applePrice * 5;
+// console.log(apple5);
+apple20 = 200;
+apple1 = apple20 / 20;
+console.log(apple1);

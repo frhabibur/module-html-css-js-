@@ -1,0 +1,13 @@
+#countries-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+   
+    grid-gap: 20px
+    
+}
+.country-style{
+    background-color: tomato;
+    border:1px solid yellowgreen;
+    border-radius: 10px;
+    padding-left:20px;
+}

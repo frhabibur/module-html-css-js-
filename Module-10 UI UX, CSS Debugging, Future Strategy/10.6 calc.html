@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calc</title>
+    <style>
+        :root {
+            --main-color: tomato;
+            --secondary-color: rgb(214, 214, 18);
+            --main-background: #ff11ed;
+        }
+
+        h1 {
+            color: var(--main-color);
+        }
+
+        p {
+            font-size: calc()
+        }
+
+        .box-1 {
+            width: 200px;
+            height: 200px;
+            background-color: var(--main-background);
+        }
+
+        .box-2 {
+            width: calc(100%- 200px);
+            height: 200px;
+            background: red;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>this is caluclataon function from CSS </h1>
+    <P>i AM Writing now don't disturb me </P>
+    <div class="box-1"></div>
+    <div class="box-2"></div>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Columns</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        .row {
+            height: 500px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row bg-danger align-items-center mt-5" style="--bs-bg-opacity:.2;">
+            <div class="col-md-4 h-25 bg-warning">col-md-4</div>
+            <div class="col-md-4 h-25 bg-danger">col-md-4</div>
+            <div class="col-md-4 h-25 bg-secondary">col-md-4</div>
+        </div>
+        <div class="row bg-danger justify-content-evenly mt-5" style="--bs-bg-opacity:.2;">
+            <div class="col-md-3 h-25 bg-warning">col-md-4</div>
+            <div class="col-md-3 h-25 bg-danger">col-md-4</div>
+            <div class="col-md-3 h-25 bg-secondary">col-md-4</div>
+        </div>
+        <div class="row bg-danger justify-content-evenly mt-5" style="--bs-bg-opacity:.2;">
+            <div class="col-md-3 h-25 bg-warning align-self-center">col-md-4</div>
+            <div class="col-md-3 h-25 bg-danger align-self-end">col-md-4</div>
+            <div class="col-md-3 h-25 bg-secondary align-self-xl-end">col-md-4</div>
+        </div>
+        <div class="row bg-danger justify-content-evenly mt-5" style="--bs-bg-opacity:.2;">
+            <div class="col-md-5 h-25 bg-warning align-self-center">col-md-4</div>
+            <div class="col-md-7 h-25 bg-danger align-self-end">col-md-4</div>
+            <div class="col-md-4 h-25 bg-secondary align-self-xl-end">col-md-4</div>
+        </div>
+    </div>
+</body>
+
+</html>

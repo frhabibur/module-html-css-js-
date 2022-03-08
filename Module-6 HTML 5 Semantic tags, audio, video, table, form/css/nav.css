@@ -1,0 +1,17 @@
+header nav ul{
+    display: flex;
+}
+header nav li{
+    list-style: none;
+    margin:0px 20px;
+    background-color: royalblue;
+    padding:10px
+}
+header nav li:hover{
+    background-color: rgb(241, 84, 11);
+}
+header nav li a{
+    text-decoration: none;
+    color:rgb(24, 22, 22);
+    font-size:20px;
+}

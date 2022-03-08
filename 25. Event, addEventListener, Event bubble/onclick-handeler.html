@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click Event</title>
+</head>
+
+<body>
+    <h1>I am Coming from javascript</h1>
+    <button onclick='document.body.style.backgroundColor = "yellow" '>Click for yellowBg</button>
+    <button onclick=" bgRed() ">Click for redBg</button>
+    <button onclick="bgBlack()">Click for blackBg</button>
+    <button id='violet-btn'>Click for violetBg</button>
+    <button id="blue-btn">Click for BuleBg</button>
+    <button id="golden-btn">Click for Golden</button>
+    <button id="DeepPink-btn">Click for DeepPink</button>
+
+    <script src="js/onclick-handel.js"></script>
+    <script>
+        function bgRed() {
+            document.body.style.backgroundColor = 'red';
+        }
+
+
+    </script>
+</body>
+
+</html>

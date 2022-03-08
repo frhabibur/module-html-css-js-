@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform</title>
+    <style>
+        .box-container {
+            width: 150px;
+            height: 150px;
+            background: violet;
+            margin: 10px 0;
+            padding-top: 10px;
+        }
+
+        .inner {
+            width: 140px;
+            height: 140px;
+            background: yellowgreen;
+            margin: auto;
+            /* transform: scale(.5) rotate(45deg) skew(25deg) translate(100px, 200px); */
+            transition: all .5s;
+        }
+
+        .box-container:hover>.inner {
+            transform: translate(330px, 0px)
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box-container">
+        <div class="inner">box-1</div>
+    </div>
+    <div class="box-container">
+        <div class="inner">box-2</div>
+    </div>
+    <div class="box-container">
+        <div class="inner">box-3</div>
+    </div>
+</body>
+
+</html>

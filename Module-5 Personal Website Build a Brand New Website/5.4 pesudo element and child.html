@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>child</title>
+    <style>
+        li {
+            font-size: 25px;
+        }
+
+        li:first-child {
+            background-color: khaki;
+        }
+
+        li:last-child {
+            background-color: lawngreen;
+        }
+
+        li:nth-child(4n-1) {
+            color: goldenrod;
+        }
+
+        li::before {
+            content: "Before ";
+            color: red;
+        }
+
+        li::after {
+            content: " After";
+            color: green;
+        }
+
+        .main-div {
+            width: 400px;
+            height: 50px;
+            background: tomato;
+            position: relative;
+        }
+
+        .main-div::after {
+            content: "After";
+            width: 100px;
+            height: 50px;
+            background: lawngreen;
+            position: absolute;
+            left: 400px;
+            text-align: center;
+            line-height: 50px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>number-1</li>
+        <li>number-2</li>
+        <li>number-3</li>
+        <li>number-4</li>
+        <li>number-5</li>
+        <li>number-6</li>
+        <li>number-7</li>
+        <li>number-8</li>
+        <li>number-9</li>
+        <li>number-10</li>
+    </ul>
+    <div class="main-div">
+
+    </div>
+</body>
+
+</html>

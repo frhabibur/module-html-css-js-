@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image gallary</title>
+    <style>
+        .photo-frame {
+            width: 300px;
+            height: 200px;
+            border: 2px solid red;
+            border-radius: 10px;
+            position: relative
+        }
+
+        .frame-photo img {
+            width: 100%;
+            height: 200px;
+            border-radius: 10px;
+
+        }
+
+        .frame-details {
+            padding: 10px;
+            position: absolute;
+            top: 0;
+            transition: all .5s;
+            background: rgba(0, 0, 0, 0.664);
+            box-sizing: border-box;
+            height: 0px;
+
+        }
+
+        .photo-frame:hover .frame-details {
+            display: block;
+            height: 200px;
+            transition: all .5s;
+            grid-template-rows: ;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="photo-album">
+        <div class="photo-frame">
+            <div class="frame-photo">
+                <img src="images/tiger.jpg" alt="Photo of tiger">
+            </div>
+            <div class="frame-details">
+                <h2>The Tiger</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae laborum quas error eum dolore at
+                    laboriosam rem tenetur tempore accusamus asperiores cupiditate architecto laudantium placeat
+                    explicabo est fugit, magnam atque.</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

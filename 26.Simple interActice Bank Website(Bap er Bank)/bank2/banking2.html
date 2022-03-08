@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking-2</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header>
+        <h1 class="text-5xl text-center font-bold mb-8">Let's get some <span class="text-orange-500">
+                Moooooooooooney</span></h1>
+    </header>
+    <main>
+        <section class="w-3/4 m-auto ">
+            <div class="grid grid-cols-3 gap-4">
+                <div class="bg-blue-100 p-5 rounded shadow-lg">
+                    <h3 class="text-2xl">Deposit</h3>
+                    <h2 class="text-4xl">$<span id="deposit-total">00</span></h2>
+                </div>
+                <div class="bg-red-100 p-5 rounded shadow-lg">
+                    <h3 class="text-2xl">WithDraw</h3>
+                    <h2 class="text-4xl">$<span id="withdraw-total">00</span></h2>
+                </div>
+                <div class="bg-green-200 p-5 rounded shadow-lg">
+                    <h3 class="text-2xl">Balance</h3>
+                    <h2 class="text-4xl">$<span id="balance-total">1000</span></h2>
+                </div>
+            </div>
+        </section>
+
+        <section class="mt-8 w-3/4 m-auto">
+            <div class="grid grid-cols-2 gap-10">
+                <div class="bg-blue-200 p-5 rounded shadow-lg">
+                    <h3 class="text-2xl">Please Deposit</h3>
+                    <input id="deposit-input" class="rounded px-5 block py-1" type="text" placeholder="deposit amount">
+                    <button id="deposit-button"
+                        class="rounded bg-yellow-200 px-3 py-1 mt-3 shadow block">Deposit</button>
+                </div>
+                <div class="bg-red-200 p-5 rounded shadow-lg">
+                    <h3 class="text-2xl">Please WithDraw</h3>
+                    <input id="withdraw-input" class="rounded px-5 block py-1" type="text"
+                        placeholder=" WithDraw amount">
+                    <button id="withdraw-button"
+                        class="rounded bg-yellow-200 px-3 py-1 mt-3 shadow block">WithDraw</button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <script src="banking2.js"></script>
+</body>
+
+</html>

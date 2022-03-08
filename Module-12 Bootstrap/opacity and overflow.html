@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opacity</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        button:hover {
+            opacity: 1 !important;
+        }
+
+        .text {
+            width: 200px;
+            height: 100px;
+            scrollbar-width: none;
+            overflow-y: hidden;
+
+        }
+
+        div {
+            width: 300px;
+            height: 100px;
+            border: 2px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <button class="btn btn-warning text-white text-bold opacity-50">Opacity</button>
+    </div>
+    <!-- overflow -->
+    <div class="text bg-light border border-danger border-2 overflow-scroll">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam facere aspernatur sapiente dolor! Laudantium
+            ex consequuntur saepe, labore consequatur cumque.</p>
+    </div>
+
+    <div class="overflow-auto ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur ullam voluptatum,
+        eligendi doloremque eius repudiandae! Voluptas animi, dolore aut rem dolor doloremque, itaque illo amet, fugit
+        dolorum voluptatibus eaque ad.</div>
+    <div class="overflow-hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur ullam voluptatum,
+        eligendi doloremque eius repudiandae! Voluptas animi, dolore aut rem dolor doloremque, itaque illo amet, fugit
+        dolorum voluptatibus eaque ad.</div>
+    <div class="overflow-visible">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur ullam voluptatum,
+        eligendi doloremque eius repudiandae! Voluptas animi, dolore aut rem dolor doloremque, itaque illo amet, fugit
+        dolorum voluptatibus eaque ad.</div>
+    <div class="overflow-scroll">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur ullam voluptatum,
+        eligendi doloremque eius repudiandae! Voluptas animi, dolore aut rem dolor doloremque, itaque illo amet, fugit
+        dolorum voluptatibus eaque ad.</div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

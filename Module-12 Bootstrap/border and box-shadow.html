@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>border and box-shadow</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        span {
+            width: 100px;
+            height: 100px;
+            display: inline-block;
+
+        }
+    </style>
+</head>
+
+<body>
+    <span class="mb-3 bg-light d-block text-white border border-primary border-4"></span>
+    <span class="mb-3 border-bottom border-start  border-end border-top-0 border-end-0 border-top"></span>
+    <span class="mb-3 border border-warning border-5"></span>
+
+
+    <!-- border radius -->
+    <span class="bg-secondary border border-warning border-5 rounded-4 " style=""></span>
+    <span class="bg-warning rounded-top shadow " style=""></span>
+    <span class="bg-danger rounded-bottom" style=""></span>
+    <span class="bg-secondary rounded-circle " style=""></span>
+    <span class="bg-info rounded-start " style=""></span>
+    <span class="bg-primary rounded-end " style=""></span>
+    <span class="bg-danger rounded-pill " style="width:100px;height:50px;--bs-bg-opacity:.5;"></span>
+</body>
+
+</html>
